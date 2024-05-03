@@ -101,7 +101,7 @@ main {
   border: 13px inset #dae6cb;
 }
 
-.result::before {
+/* .result::before {
   content: "";
   background: url(screen.jpg) center center/cover no-repeat;
   position: absolute;
@@ -110,7 +110,7 @@ main {
   bottom: 0px;
   left: 0px;
   opacity: 0.3;
-}
+} */
 
 .expression {
   font-size: 1.5rem;
@@ -137,6 +137,16 @@ main {
   height: 50%;
   overflow: hidden;
   color: #233d27;
+  transition: .5s all ease;
+}
+
+.answer:hover {
+  cursor: pointer;
+  color: #9e2b0e;
+}
+
+.clicked {
+  transform: translateY(-3px);
 }
 
 .numbers-operators {

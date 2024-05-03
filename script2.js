@@ -468,6 +468,14 @@ function equals() {
     answer.textContent = printed[0];
 }
 
+document.querySelector(".result").addEventListener("click", function() {
+    document.querySelector(".answer").classList.add("clicked");
+    setTimeout(function() {
+        document.querySelector(".answer").classList.remove("clicked");
+    }, 500);
+    navigator.clipboard.writeText(answer.textContent);
+})
+
 
 
 
